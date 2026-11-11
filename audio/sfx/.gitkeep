@@ -1,0 +1,10 @@
+# Drop real samples here to override the procedural sound synthesis.
+#
+# Recognised names (any of .wav .mp3 .ogg .flac .m4a):
+#   whoosh  impact  impact_heavy  block  super  ko  land  step
+#
+# Anything missing is synthesised in src/audio.py, so this folder can stay
+# empty and the render still has full sound.
+#
+# Audio files in this folder are gitignored — don't commit samples you don't
+# have the rights to.

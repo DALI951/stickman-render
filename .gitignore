@@ -1,0 +1,34 @@
+# --- rendered output (regenerate any time; never commit) ---
+out/
+*.mp4
+
+# --- audio assets ---
+# Deliberately ignored: a fresh clone must work with zero asset files, and we
+# must not commit samples whose licence we can't prove. Keep the folders.
+audio/sfx/*
+audio/music/*
+!audio/sfx/.gitkeep
+!audio/music/.gitkeep
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- editors / os ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- secrets: never commit these, ever ---
+.env
+.env.*
+*.pem
+*.key
+credentials.json

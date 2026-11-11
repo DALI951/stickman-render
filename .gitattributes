@@ -1,0 +1,12 @@
+# Windows dev machine + Linux CI: normalise line endings in the repo to LF so
+# the two don't churn every file on every checkout.
+* text=auto eol=lf
+
+# Binary / non-text
+*.mp4 binary
+*.png binary
+*.jpg binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.flac binary

@@ -1,0 +1,13 @@
+# stickman-render — dependencies
+#
+# All three are preinstalled on most Python setups; pinned loosely on purpose.
+#   pillow          - rasterising the stickman, effects, text, post-processing
+#   numpy           - supersampled frame buffers + the whole soundtrack synthesis
+#   imageio-ffmpeg  - ships a static ffmpeg binary, so no system install needed
+#
+# No rendering framework, no GPU, no node. Deliberate: this has to build and
+# run on a phone-grade machine and on a bare GitHub runner.
+
+pillow>=10.0
+numpy>=1.24
+imageio-ffmpeg>=0.4.9

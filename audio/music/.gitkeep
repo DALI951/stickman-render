@@ -1,0 +1,7 @@
+# Drop a music track here to override the synthesised music bed.
+#
+# The first file (sorted) is used, looped/trimmed to the video length with a
+# fade-out. If this folder is empty, src/audio.py synthesises a fight pulse.
+#
+# Audio files in this folder are gitignored — don't commit tracks you don't
+# have the rights to.
