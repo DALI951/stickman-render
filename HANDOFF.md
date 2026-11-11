@@ -44,11 +44,12 @@
 ## Next step
 1. Decide the publishing loop: how many seeds per day, upload cadence, titles,
    and thumbnails. The engine is done; volume is now a scheduling problem.
-2. Answer the three open questions in `RULES.md` (channel branding in-frame?,
-   fixed ~20 s length?, allow committed audio samples?).
-3. Optional quality pass: this is the first working version, and the poses are
+2. Optional quality pass: this is the first working version, and the poses are
    good-not-great. Worth a session of purely visual tuning now that `seer`
    is the only missing piece (see Blocked).
+3. Answered 2026-11-11 (recorded as decisions in `RULES.md`): frames stay clean
+   (no baked-in branding), length stays seed-derived 21–31 s, audio stays
+   procedural-only for now.
 
 ## Blocked
 - `seer` subagent is unreachable (`ECONNREFUSED`) and this model cannot read

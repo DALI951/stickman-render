@@ -82,11 +82,15 @@ from seeds, not from hand animation.
 - 2026-11-11 — **Seed is mixed through SplitMix64 before seeding numpy** — raw
   consecutive seeds produced correlated first draws (4 of 8 videos came out the
   same palette). See `src/rng.py::_mix`.
+- 2026-11-11 — **Frames stay clean, no baked-in branding** (Dali's call) —
+  branding is added at upload time. Baked-in marks are unremovable after a
+  rebrand and eat crop space on a 9:16 frame.
+- 2026-11-11 — **Length stays seed-derived 21–31 s** (Dali's call) — variety per
+  video, and retention is driven by the hook + loop, not a magic duration.
+- 2026-11-11 — **Audio stays procedural-only for now** (Dali's call) — zero
+  licensing risk, a fresh clone always works. `audio/sfx/` + `audio/music/` keep
+  the loader's sample-override path open for a royalty-free pack later.
 
 ## Open questions for Dali
-- [ ] Do you want the videos to carry any channel branding (handle/watermark)
-      baked in, or keep the frames clean and add branding at upload time?
-- [ ] Target length: currently seed-derived 21–31 s. Want a fixed ~20 s for
-      Shorts retention, or keep the variety?
-- [ ] Should `audio/` accept committed samples (e.g. royalty-free packs), or
-      stay gitignored and procedural-only?
+- None open. (Branding / length / audio answered 2026-11-11, recorded as
+  decisions above.)
